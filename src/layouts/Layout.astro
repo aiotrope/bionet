@@ -1,0 +1,56 @@
+---
+import '@picocss/pico';
+import '../styles/global.css';
+import Masthead from '../components/Masthead.astro';
+export interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+}
+
+const {
+  title = 'Arnel Imperial, Web Developer',
+  description = 'Personal internet site project by Arnel Imperial',
+  canonical = 'https://www.arnelimperial.com',
+} = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{title}</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="description" content={description} />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="subject" content="Arnel Imperial" />
+    <meta name="robots" content="noarchive" />
+    <meta name="distribution" content="GLOBAL" />
+    <meta name="rating" content="GENERAL" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content={title} />
+    <meta property="og:site_name" content="Arnel Imperial" />
+    <meta property="og:url" content="https://www.arnelimperial.com" />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/favicon-16.png" />
+    <meta property="og:image" content="/favicon-32.png" />
+  </head>
+  <body>
+    <Masthead />
+    <slot />
+  </body>
+</html>
