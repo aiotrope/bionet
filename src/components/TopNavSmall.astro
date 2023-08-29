@@ -1,0 +1,54 @@
+---
+import logo from '/icon.svg';
+---
+
+<nav class="container-fluid navbar-sm-screen" id="navbar-sm">
+  <ul>
+    <li>
+      <a href="#">
+        <img
+          src={logo}
+          alt="Logo of Arnel Imperial's website"
+          class="navbar-logo"
+        />
+      </a>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <details role="list" dir="rtl">
+        <summary aria-haspopup="listbox" role="link" id="hero-title">
+          Navigation
+        </summary>
+        <ul role="listbox">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </details>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  .navbar-sm-screen {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar-sm-screen ul li a,
+  .navbar-sm-screen ul li details summary {
+    color: var(--color-offwhite);
+  }
+
+  @media (min-width: 481px) {
+    .navbar-sm-screen {
+      display: none !important;
+    }
+  }
+</style>
+<script>
+  import '../scripts/masthead.js';
+</script>

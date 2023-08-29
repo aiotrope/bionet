@@ -1,0 +1,46 @@
+---
+import logo from '/icon.svg';
+---
+
+<nav class="container-fluid navbar-lg-screen" id="navbar-lg">
+  <ul>
+    <li>
+      <a href="#">
+        <img src={logo} alt="Logo of Arnel Imperial's website" class="navbar-logo"/>
+      </a>
+    </li>
+  </ul>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<style>
+  .navbar-lg-screen {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .navbar-lg-screen ul li a:hover {
+    box-shadow: 0 0 0 3px var(--color-blue);
+  }
+
+  .navbar-lg-screen ul li a {
+    color: var(--color-offwhite);
+  }
+
+  @media (max-width: 480px) {
+    .navbar-lg-screen {
+      display: none !important;
+    }
+  }
+</style>
+<script>
+  import '../scripts/masthead.js';
+</script>
+

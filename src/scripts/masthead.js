@@ -4,11 +4,11 @@ function scrollValue() {
   var scroll = window.scrollY;
 
   if (scroll < 300) {
-    navbarLg.classList.remove('BgColour');
-    navbarSm.classList.remove('BgColour');
+    navbarLg.classList.remove('topNavBg');
+    navbarSm.classList.remove('topNavBg');
   } else {
-    navbarLg.classList.add('BgColour');
-    navbarSm.classList.add('BgColour');
+    navbarLg.classList.add('topNavBg');
+    navbarSm.classList.add('topNavBg');
   }
 }
 
