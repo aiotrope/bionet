@@ -16,10 +16,9 @@ body {
 }
 
 a:hover {
-  box-shadow: 0 0 0 3px var(--color-blue);
+  outline: 2px solid var(--color-blue);
   text-decoration: none;
-  padding: 2px;
-}
+} 
 
 .navbar-logo {
   height: 35px;
