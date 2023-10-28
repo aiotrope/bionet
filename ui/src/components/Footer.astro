@@ -1,16 +1,20 @@
----
-import logo from '/icon-192.png';
----
-
-<footer class="footer-banner" role="img" aria-label="Footer banner section of the website">
+<footer
+  class="footer-banner"
+  role="img"
+  aria-label="Footer banner section of the website"
+>
   <div>
-    <img src={logo} alt="Logo of Arnel Imperial's website" class="footer-logo"/>
+    <img
+      src="/icon-192.png"
+      alt="Logo of Arnel Imperial's website"
+      class="footer-logo"
+    />
 
     <p class="footer-hero-text">
       Personal internet site project by
       <a href="#contact" class="footer-hero-text">Arnel Imperial</a>
     </p>
-   <p class="footer-hero-text">Website updated: 13.02.2023</p>
+    <p class="footer-hero-text">Website updated: 13.02.2023</p>
   </div>
 </footer>
 
@@ -26,7 +30,8 @@ import logo from '/icon-192.png';
     overflow: hidden;
     background-size: cover !important;
     padding: 0 !important;
-    background: radial-gradient(
+    background:
+      radial-gradient(
         ellipse at center,
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0) 37%,
@@ -47,8 +52,8 @@ import logo from '/icon-192.png';
   }
 
   @media (min-width: 481px) {
-   .footer-hero-text {
-    font-size: 1em;
-   }
+    .footer-hero-text {
+      font-size: 1em;
+    }
   }
 </style>

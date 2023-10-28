@@ -1,0 +1,16 @@
+*.md
+Dockerfile
+Dockerfile.*
+.env
+.env.*
+
+DS_Store
+.vscode
+
+rest.http
+.gitignore
+.git
+.dockerignore
+
+logs
+*.log

@@ -1,14 +1,13 @@
 # bionet
 
-## CLI Commands
+## Running
 
 ```bash
-# start on debug mode @ port 4321
-yarn dev
-
-# build app
-yarn build
-
-# preview on production mode @ port 4321
-yarn preview
+# DEBUG MODE
+# buid docker images based on docker-compose config; running on port 7800
+docker compose -f docker-compose.dev.yml up --build
+# stop running container
+docker compose down
+# to restart on detach mode 
+docker compose -f docker-compose.dev.yml up -d
 ```
