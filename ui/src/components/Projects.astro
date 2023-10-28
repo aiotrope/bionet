@@ -1,0 +1,22 @@
+---
+const request = await fetch('https://api.github.com/users/aiotrope/repos');
+const response = await request.json();
+const repo_id = [489090060, 585085526, 548415769, 648942844];
+const repos = await response.filter((repo: { id: number; }) =>
+  repo_id.includes(repo.id)
+);
+
+console.log(response)
+---
+
+<section>
+  <div class="container" style="padding-top: 5rem; padding-bottom: 2rem">
+    <hgroup>
+      <h2>Projects</h2>
+      <h3>My experiments</h3>
+    </hgroup>
+    <div class="grid">
+     
+    </div>
+  </div>
+</section>
