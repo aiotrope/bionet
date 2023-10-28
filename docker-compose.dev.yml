@@ -2,7 +2,7 @@ services:
   ui:
     build:
       context: ui
-      dockerfile: Dockerfile.dev
+      dockerfile: dev.Dockerfile
     image: ui
     volumes:
       - ./ui/:/app

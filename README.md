@@ -5,9 +5,9 @@
 ```bash
 # DEBUG MODE
 # buid docker images based on docker-compose config; running on port 7800
-docker compose up --build
+docker compose -f docker-compose.dev.yml up --build
 # stop running container
-docker compose down
+docker compose -f docker-compose.dev.yml down
 # to restart on detach mode 
-docker compose up
+docker compose -f docker-compose.dev.yml up -d
 ```
