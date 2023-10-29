@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bionet-ui-deployment
+  labels:
+    app: bionet-ui
+spec:
+  selector:
+    matchLabels:
+      app: bionet-ui
+  template:
+    metadata:
+      labels:
+        app: bionet-ui
+    spec:
+      containers:
+        - name: bionet-ui
+          image: aiotrope/bionet-ui:latest
+          imagePullPolicy: Always
+          resources:
+            limits:
+              memory: "356Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 4321
