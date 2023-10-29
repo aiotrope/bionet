@@ -1,11 +1,11 @@
 services:
-  ui:
+  bionet-ui:
     build:
-      context: ui
+      context: bionet-ui
       dockerfile: prod.Dockerfile
-    image: ui-prod
+    image: bionet-ui-prod
     volumes:
-      - ./ui/:/app
+      - ./bionet-ui/:/app
       - astro_node_modules:/app/node_modules
     restart: "on-failure"
     ports:

@@ -1,11 +1,11 @@
 services:
-  ui:
+  bionet-ui:
     build:
-      context: ui
+      context: bionet-ui
       dockerfile: dev.Dockerfile
-    image: ui
+    image: bionet-ui
     volumes:
-      - ./ui/:/app
+      - ./bionet-ui/:/app
       - astro_node_modules:/app/node_modules
     restart: 'no'
     expose:
