@@ -1,5 +1,7 @@
 # bionet
 
+Default ui design.
+
 ## Running the app
 
 ### Docker compose
