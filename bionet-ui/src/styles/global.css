@@ -15,27 +15,18 @@ body {
   scroll-behavior: smooth;
 }
 
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1px;
+}
+
+header nav ul li {
+  display: inline;
+  padding-right: 1rem;
+  font-weight: bolder;
+}
+
 a:hover {
-  outline: 2px solid var(--color-blue);
-  text-decoration: none;
-} 
-
-.navbar-logo {
-  height: 35px;
-  width: 35px;
-}
-
-.topNavBg {
-  color: var(--color-black) !important;
-  transition: all 2s;
-  background-color: var(--color-bg-nav);
-  border-bottom: 1px solid var(--color-lightgray);
-}
-
-.topNavBg ul li a {
-  color: var(--color-black) !important;
-}
-
-.topNavBg ul li details summary {
-  color: var(--color-black) !important;
+  text-decoration: none !important;
 }
